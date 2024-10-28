@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Trirong:300,400,500,700|Source+Code+Pro:300,400,500,700");
+
+/* Set up some CSS variables to theme the application. */
+/* Set up some CSS variables to theme the application. */
+:root {
+  --matr-navbar-bg: darkgrey;
+  --matr-navbar-bg-rgb: 105, 105, 105;
+  --matr-navbar-text-color: white;
+  --matr-navbar-highlight-text: #959595;
+  --footer-bg-gradient: linear-gradient(to bottom, #404040, darkgrey);
+}
+
+/* Change bootstrap variable values.
+ See https://getbootstrap.com/docs/5.2/customize/css-variables/
+ */
+body {
+  --bs-dark: var(--matr-navbar-bg);
+  --bs-dark-rgb: var(--matr-navbar-bg-rgb);
+  background: url('images/UHBackground.jpg');
+  background-size: 100% auto;
+  font-family: 'Trirong', serif;
+}
+
+#middle {
+  color: white;
+}
+
+/* Set the alert background on the signin and signup pages. */
+#signin-page .alert-light,
+#signup-page .alert-light {
+  --bs-alert-bg: var(--matr-navbar-bg);
+}
+
+/* Define custom styles */
+.gray-background {
+  background-color: var(--matr-navbar-bg);
+  color: var(--bs-dark);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-family: 'Trirong', serif;
+}
+
+footer,
+footer a {
+  color: var(--matr-navbar-text-color);
+  font-family: 'Trirong', serif;
+  background: var(--footer-bg-gradient);
+  text-shadow: 0 0 5px black; /* Add a black shadow behind the text */
+}
+
+body .navbar {
+  --bs-navbar-active-color: var(--matr-navbar-text-color);
+  --bs-navbar-brand-color: var(--bs-white);
+  --bs-navbar-brand-hover-color: var(--bs-red);
+  --bs-navbar-color: var(--matr-navbar-text-color);
+  --bs-navbar-hover-color: var(--bs-red);
+  font-family: 'Trirong', serif;
+  background: var(--footer-bg-gradient);
+  text-shadow: 0 0 5px black; /* Add a black shadow behind the text */
+}
+.bg-dark a.dropdown-item {
+  color: black;
+  font-family: 'Trirong', serif;
+  text-shadow: 0 0 0;
+}
+
+.navbar a.nav-link.active {
+  color: var(--matr-navbar-highlight-text);
+  font-family: 'Trirong', serif;
+}
+
+.custom-submit-field input {
+  width: 100% !important;
+  font-family: 'Trirong', serif;
+}
+
+.no-underline {
+  text-decoration: none !important;
+  font-family: 'Trirong', serif;
+}
+
+.pfp {
+  height: auto;
+  width: 200px;
+}
+
+.pfpText {
+  color: white;
+  font-family: 'Trirong', serif;
+}
+
+.equipment-card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f8f9fa; /* Light gray background */
+  font-family: 'Trirong', serif;
+}
+
+.equipment-header {
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.equipment-image {
+  width: 100%;
+  height: 320px; /* Set a fixed height for all images */
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.equipment-details {
+  padding: 20px;
+}
+
+.equipment-title {
+  font-size: 2rem; /* Larger font size for titles */
+  font-weight: 700; /* Bold font weight */
+  color: #000; /* Black text color */
+  margin-bottom: 10px; /* Add some spacing below the title */
+  font-family: 'Trirong', serif;
+}
+
+.equipment-name {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  color: #343a40; /* Dark text color */
+  font-family: 'Trirong', serif;
+}
+
+.equipment-category {
+  font-size: 1rem;
+  color: #6c757d; /* Gray text color */
+  font-family: 'Trirong', serif;
+}
+
+.equipment-description,
+.equipment-location,
+.equipment-contact-email {
+  margin-top: 10px;
+  color: #343a40; /* Dark text color */
+  font-family: 'Trirong', serif;
+}
+
+.message-box {
+  background: radial-gradient(#ff9a9e, #fad0c4);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Trirong', serif;
+}
+
+.message-box h2 {
+  color: #fff;
+}
+
+.message-box p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.heart-fall {
+  position: fixed;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.trans-black-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 175px;
+  height: 175px;
+}
+
+.generator-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.generator-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.generator-header {
+  height: 100px;
+  overflow: hidden;
+}
+
+.generator-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.generator-details {
+  padding: 1rem;
+}
+
+.generator-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.generator-muscle-group,
+.generator-duration,
+.generator-exercise,
+.generator-description {
+  margin-top: 0.5rem;
+}
+
+.landing-image {
+  width: 100%;
+  height: 400px;
+
+  border-radius: 10px;
+}
