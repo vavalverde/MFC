@@ -17,11 +17,6 @@ const Footer = () => (
           {' '}
           <br />
         </Col>
-        <Col className="text-center">
-          <h5>Resources</h5>
-          <Nav.Link id="about-us-nav" as={NavLink} to="/about" key="about">About Us</Nav.Link>
-          <Nav.Link id="website-nav" href="https://manoa-fit-connect.github.io/" target="_blank" rel="noopener noreferrer">User Guide</Nav.Link>
-        </Col>
       </Row>
 
     </Container>
